@@ -8,7 +8,7 @@ function NavBar() {
     <nav className="navbar">
       <div className="navbar__logo">
         <Link to="/">
-          <img src="/images/Logo.png" alt="Logo" />
+          <img src={process.env.PUBLIC_URL + "/images/Logo.png"} alt="Logo" />
         </Link>
       </div>
 
