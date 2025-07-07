@@ -3,12 +3,6 @@ import { motion } from 'framer-motion';
 import '../../styles/PrivatePractices.css';
 
 const PrivatePractices = () => {
-  const fadeInUp = {
-    initial: { y: 20, opacity: 0 },
-    animate: { y: 0, opacity: 1 },
-    transition: { duration: 0.6, ease: "easeOut" }
-  };
-
   return (
     <main className="practices-main">
       <div className="animated-bg" />

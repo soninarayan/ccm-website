@@ -51,7 +51,7 @@ export default function ServicesCarousel() {
       autoPlayRef.current = setInterval(next, AUTO_PLAY_INTERVAL);
     }
     return () => clearInterval(autoPlayRef.current);
-  }, [idx, isPlaying]);
+  }, [idx, isPlaying, next]);
 
   const prev = useCallback(() => {
     setIdx(i => (i - 1 + SERVICES.length) % SERVICES.length);
