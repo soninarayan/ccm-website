@@ -5,25 +5,25 @@ import '../styles/ServicesCarousel.css';
 const SERVICES = [
   {
     title: 'Remote Patient Monitoring',
-    img: '/images/rpm.jpg',
+    img: process.env.PUBLIC_URL + '/images/rpm.jpg',
     desc: 'Access RPM services which are designed to track, monitor, and help provide treatment for your patients, enhancing care in the comfort of their homes.',
     link: '#rpm'
   },
   {
     title: 'Chronic Care Management',
-    img: '/images/ccm.jpg',
+    img: process.env.PUBLIC_URL + '/images/ccm.jpg',
     desc: 'Our CCM program enhances your practice with EHR-integrated technology and dedicated professionals, providing exceptional patient care.',
     link: '#ccm'
   },
   {
     title: 'Behavioral Health',
-    img: '/images/behavioral.jpg',
+    img: process.env.PUBLIC_URL + '/images/behavioral.jpg',
     desc: 'Tailored care, support, and therapeutic solutions to assist patients in managing mental health challenges, alleviating stress, and reaching their wellness goals.',
     link: '#bh'
   },
   {
     title: 'Case Management',
-    img: '/images/case.jpg',
+    img: process.env.PUBLIC_URL + '/images/case.jpg',
     desc: 'Medical Case Management services coordinate and optimize patient care, collaborating with patients, families, and providers to create personalized plans.',
     link: '#case'
   }

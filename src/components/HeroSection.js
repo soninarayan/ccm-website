@@ -8,7 +8,7 @@ function HeroSection() {
       {/* Background Video */}
       <video
         className="hero-video"
-        src="/video.mp4"
+        src={process.env.PUBLIC_URL + "/video.mp4"}
         autoPlay
         loop
         muted
