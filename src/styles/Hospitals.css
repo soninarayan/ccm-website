@@ -1,0 +1,377 @@
+:root {
+    --primary: rgb(7,11,104);
+    --secondary: #c6cbe3;
+    --surface: #fff;
+    --bg: #f6fafd;
+    --text: #1a2233;
+    --muted: #7b8ca6;
+  }
+  
+  @keyframes gradientMove {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  
+  .hospitals-section {
+    background: var(--bg);
+    min-height: 100vh;
+    padding: 4rem 1rem 3rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .hospitals-inner {
+    background: var(--surface);
+    border-radius: 1.25rem;
+    box-shadow: 0 4px 24px rgba(13,94,166,0.10);
+    max-width: 600px;
+    width: 100%;
+    padding: 2.5rem 2rem 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .hospitals-title {
+    font-size: 2.3rem;
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 1.2rem;
+    letter-spacing: -1px;
+    text-align: center;
+  }
+  
+  .hospitals-lead {
+    font-size: 1.18rem;
+    color: var(--muted);
+    margin-bottom: 2rem;
+    text-align: center;
+    max-width: 480px;
+  }
+  
+  .hospitals-content ul {
+    margin-bottom: 2.2rem;
+    padding-left: 1.2rem;
+    color: var(--text);
+    font-size: 1.08rem;
+    line-height: 1.7;
+  }
+  
+  .hospitals-content ul li {
+    margin-bottom: 0.7rem;
+    list-style: disc;
+  }
+  
+  .hospitals-cta-btn {
+    display: inline-block;
+    background: var(--accent);
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.13rem;
+    border-radius: 2rem;
+    padding: 0.8rem 2.2rem;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.18s, box-shadow 0.18s, transform 0.12s;
+    box-shadow: 0 2px 8px rgba(13,94,166,0.10);
+    border: none;
+    cursor: pointer;
+    letter-spacing: 0.01em;
+  }
+  
+  .hospitals-cta-btn:hover {
+    background: #b80000;
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 4px 16px rgba(13,94,166,0.13);
+  }
+  
+  .hospitals-main {
+    font-family: 'Segoe UI', 'Inter', Arial, sans-serif;
+    background: linear-gradient(135deg, var(--secondary) 0%, #ffffff 100%);
+    min-height: 100vh;
+    color: var(--primary);
+    position: relative;
+    z-index: 1;
+  }
+  
+  .animated-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, 
+      rgba(7,11,104,0.03) 0%,
+      rgba(198,203,227,0.03) 25%,
+      rgba(7,11,104,0.03) 50%,
+      rgba(198,203,227,0.03) 75%,
+      rgba(7,11,104,0.03) 100%
+    );
+    background-size: 400% 400%;
+    animation: gradientMove 15s ease infinite;
+    z-index: -1;
+  }
+  
+  .hospitals-hero {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 4rem;
+    padding: 5rem 2rem 3rem 2rem;
+    background: linear-gradient(135deg, var(--primary) 0%, rgba(7,11,104,0.9) 100%);
+    border-radius: 0 0 3rem 3rem;
+    box-shadow: 0 10px 40px rgba(7,11,104, 0.15);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hero-particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+  }
+  
+  .hero-particle {
+    position: absolute;
+    background: rgba(198,203,227,0.1);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+  
+  .particle-1 {
+    width: 100px;
+    height: 100px;
+    top: 20%;
+    left: 10%;
+    animation: float 8s ease-in-out infinite;
+  }
+  
+  .particle-2 {
+    width: 150px;
+    height: 150px;
+    top: 60%;
+    right: 15%;
+    animation: float 12s ease-in-out infinite;
+  }
+  
+  .particle-3 {
+    width: 70px;
+    height: 70px;
+    bottom: 20%;
+    left: 30%;
+    animation: float 10s ease-in-out infinite;
+  }
+  
+  .hospitals-hero-left {
+    flex: 1 1 420px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .hospitals-hero-tagline {
+    font-size: 2.2rem;
+    font-style: italic;
+    font-weight: 400;
+    color: var(--secondary);
+    margin-bottom: 1.2rem;
+    line-height: 1.3;
+  }
+  
+  .hospitals-hero-divider {
+    width: 160px;
+    border: none;
+    border-top: 2px solid var(--secondary);
+    margin: 0 0 2.2rem 0;
+    opacity: 0.6;
+  }
+  
+  .hospitals-hero-title {
+    font-size: 4.2rem;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 1.4rem;
+    letter-spacing: -2px;
+    line-height: 1.1;
+  }
+  
+  .hospitals-hero-desc {
+    font-size: 1.25rem;
+    color: var(--secondary);
+    max-width: 520px;
+    line-height: 1.7;
+  }
+  
+  .hospitals-hero-right {
+    flex: 1 1 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hospitals-hero-image {
+    width: 100%;
+    max-width: 520px;
+    border-radius: 1.2rem;
+    box-shadow: 0 4px 32px rgba(60, 120, 200, 0.13);
+    object-fit: cover;
+  }
+  
+  .hospitals-benefits {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 4rem 2rem 3rem 2rem;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .hospitals-benefit-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 2rem;
+  }
+  
+  .hospitals-benefit-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 20px rgba(7,11,104, 0.08);
+    padding: 2.5rem;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(198,203,227, 0.2);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hospitals-benefit-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, 
+      rgba(7,11,104,0.03) 0%,
+      rgba(198,203,227,0.03) 50%,
+      rgba(7,11,104,0.03) 100%
+    );
+    z-index: 0;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+  
+  .hospitals-benefit-item:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 8px 30px rgba(7,11,104, 0.12);
+  }
+  
+  .hospitals-benefit-item:hover::before {
+    opacity: 1;
+  }
+  
+  .hospitals-benefit-icon {
+    color: var(--primary);
+    flex-shrink: 0;
+    background: linear-gradient(135deg, rgba(198,203,227, 0.3) 0%, rgba(255,255,255, 0.9) 100%);
+    border-radius: 1rem;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(7,11,104, 0.1);
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s ease;
+  }
+  
+  .hospitals-benefit-item:hover .hospitals-benefit-icon {
+    transform: scale(1.1) rotate(5deg);
+  }
+  
+  .hospitals-benefit-icon i {
+    font-size: 1.8rem;
+    background: linear-gradient(135deg, var(--primary) 0%, rgba(7,11,104,0.8) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .hospitals-benefit-item h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 0.8rem;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .hospitals-benefit-item p {
+    font-size: 1.1rem;
+    color: var(--text);
+    margin: 0;
+    line-height: 1.7;
+    position: relative;
+    z-index: 1;
+  }
+  
+  @media (max-width: 1100px) {
+    .hospitals-benefit-list {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .hospitals-hero-title {
+      font-size: 2.3rem;
+    }
+    .hospitals-hero-tagline {
+      font-size: 1.8rem;
+    }
+    .hospitals-hero-desc {
+      font-size: 1.1rem;
+    }
+    .hospitals-benefit-item {
+      padding: 2rem;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1.5rem;
+    }
+    .hospitals-benefit-icon {
+      width: 3.5rem;
+      height: 3.5rem;
+    }
+    .hospitals-benefit-item h2 {
+      font-size: 1.4rem;
+    }
+  }
