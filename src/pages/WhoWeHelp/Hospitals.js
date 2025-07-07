@@ -56,7 +56,7 @@ const Hospitals = () => {
           transition={{ duration: 0.8 }}
         >
           <img
-            src="/images/case.jpg"
+            src="https://soninarayan.github.io/ccm-website/images/case.jpg"
             alt="Hospital care innovation"
             className="hospitals-hero-image"
           />

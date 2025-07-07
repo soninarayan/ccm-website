@@ -106,7 +106,10 @@ const AboutUs = () => {
             }}
             transition={{ duration: 0.6 }}
           >
-            <img src="/images/about/healthcare-tech.jpg" alt="Healthcare Technology" />
+            <img 
+              src="https://soninarayan.github.io/ccm-website/images/about/healthcare-tech.jpg" 
+              alt="Healthcare Technology" 
+            />
           </motion.div>
         </motion.div>
       </section>
@@ -132,7 +135,10 @@ const AboutUs = () => {
               }}
               transition={{ duration: 0.6 }}
             >
-              <img src="/images/about/telemedicine.jpg" alt="Telemedicine Consultation" />
+              <img 
+                src="https://soninarayan.github.io/ccm-website/images/about/telemedicine.jpg" 
+                alt="Telemedicine Consultation" 
+              />
             </motion.div>
 
             <motion.div 

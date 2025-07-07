@@ -8,7 +8,10 @@ function FeaturesSection2() {
       <div className="features2-container">
         <div className="feature2-card">
           <div className="feature2-image">
-            <img src="/images/enroll.jpg" alt="Enrollment process" />
+            <img 
+              src="https://soninarayan.github.io/ccm-website/images/enroll.jpg" 
+              alt="Enrollment process" 
+            />
           </div>
           <div className="feature2-content">
             <h3>Enroll</h3>
@@ -18,7 +21,10 @@ function FeaturesSection2() {
 
         <div className="feature2-card">
           <div className="feature2-image">
-            <img src="/images/support.jpg" alt="Patient support" />
+            <img 
+              src="https://soninarayan.github.io/ccm-website/images/support.jpg" 
+              alt="Patient support" 
+            />
           </div>
           <div className="feature2-content">
             <h3>Personalized Support</h3>
@@ -28,7 +34,10 @@ function FeaturesSection2() {
 
         <div className="feature2-card">
           <div className="feature2-image">
-            <img src="/images/integration.jpg" alt="System integration" />
+            <img 
+              src="https://soninarayan.github.io/ccm-website/images/integration.jpg" 
+              alt="System integration" 
+            />
           </div>
           <div className="feature2-content">
             <h3>Seamless Integration</h3>

@@ -8,7 +8,13 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-section company-info">
-          <img src="/images/Logo.png" alt="Chronic Care Bridge Logo" className="footer-logo" />
+          <div className="footer-logo-container">
+            <img 
+              src="https://soninarayan.github.io/ccm-website/images/Logo.png" 
+              alt="Chronic Care Bridge Logo" 
+              className="footer-logo" 
+            />
+          </div>
           <p className="company-description">
             Transforming healthcare management through innovative solutions. We help healthcare providers deliver better patient care while optimizing their practice operations.
           </p>
