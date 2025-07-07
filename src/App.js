@@ -9,10 +9,12 @@ import ChronicCareManagement from './pages/OurServices/ChronicCareManagement';
 import RemotePatientMonitoring from './pages/OurServices/RemotePatientMonitoring';
 import Hospitals from './pages/WhoWeHelp/Hospitals';
 import PrivatePractices from './pages/WhoWeHelp/PrivatePractices';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="App">
         <NavBar />
         <Routes>
