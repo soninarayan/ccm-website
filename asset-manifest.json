@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ccm-website/static/css/main.ae4f6b84.css",
+    "main.js": "/ccm-website/static/js/main.70148fe1.js",
+    "static/js/453.7327f78f.chunk.js": "/ccm-website/static/js/453.7327f78f.chunk.js",
+    "index.html": "/ccm-website/index.html",
+    "main.ae4f6b84.css.map": "/ccm-website/static/css/main.ae4f6b84.css.map",
+    "main.70148fe1.js.map": "/ccm-website/static/js/main.70148fe1.js.map",
+    "453.7327f78f.chunk.js.map": "/ccm-website/static/js/453.7327f78f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ae4f6b84.css",
+    "static/js/main.70148fe1.js"
+  ]
+}
