@@ -44,6 +44,14 @@ export default function ServicesCarousel() {
   const lastScrollTime = useRef(0);
   const accumulatedDelta = useRef(0);
 
+  const next = useCallback(() => {
+    setIdx(i => (i + 1) % SERVICES.length);
+  }, []);
+
+  const prev = useCallback(() => {
+    setIdx(i => (i - 1 + SERVICES.length) % SERVICES.length);
+  }, []);
+
   // Reset auto-play timer whenever idx changes
   useEffect(() => {
     if (isPlaying) {
@@ -52,16 +60,6 @@ export default function ServicesCarousel() {
     }
     return () => clearInterval(autoPlayRef.current);
   }, [idx, isPlaying, next]);
-
-  const prev = useCallback(() => {
-    setIdx(i => (i - 1 + SERVICES.length) % SERVICES.length);
-    // Don't stop auto-play on manual navigation
-  }, []);
-
-  const next = useCallback(() => {
-    setIdx(i => (i + 1) % SERVICES.length);
-    // Don't stop auto-play on manual navigation
-  }, []);
 
   // Handle keyboard navigation
   useEffect(() => {
