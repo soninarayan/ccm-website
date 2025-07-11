@@ -1,6 +1,7 @@
 // src/components/HeroSection.js
 import React from 'react';
 import '../styles/HeroSection.css';
+import { getPublicAssetUrl } from '../utils/assetHelper';
 
 function HeroSection() {
   return (
@@ -8,7 +9,7 @@ function HeroSection() {
       {/* Background Video */}
       <video
         className="hero-video"
-        src="/video.mp4"
+        src={getPublicAssetUrl('video.mp4')}
         autoPlay
         loop
         muted

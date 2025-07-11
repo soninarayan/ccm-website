@@ -1,32 +1,33 @@
 import "../styles/WhoWeServe.css";
+import { getPublicAssetUrl } from '../utils/assetHelper';
 
 const WHO_WE_SERVE = [
   {
-    image: "/images/case.jpg",
+    image: getPublicAssetUrl('images/case.jpg'),
     title: "Private Practices",
     desc: "Deliver continuous patient monitoring and seamless EHR integration from one centralized platform",
     link: "/who-we-help/private-practices"
   },
   {
-    image: "/images/integration.jpg",
+    image: getPublicAssetUrl('images/integration.jpg'),
     title: "Hospitals",
     desc: "Enable real-time insights and streamline chronic care management for improved patient outcomes.",
     link: "/who-we-help/hospitals"
   },
   {
-    image: "/images/support.jpg",
+    image: getPublicAssetUrl('images/support.jpg'),
     title: "Insurance Groups",
     desc: "Enhance member care management and reduce healthcare costs through proactive monitoring and intervention strategies.",
     link: "/who-we-help/insurance-groups"
   },
   {
-    image: "/images/behavioral.jpg",
+    image: getPublicAssetUrl('images/behavioral.jpg'),
     title: "Third Party Administrator",
     desc: "Streamline healthcare administration and improve care coordination with our integrated platform solutions.",
     link: "/who-we-help/third-party-administrator"
   },
   {
-    image: "/images/enroll.jpg",
+    image: getPublicAssetUrl('images/enroll.jpg'),
     title: "Case Management Groups",
     desc: "Optimize patient care coordination and improve outcomes with our comprehensive case management tools.",
     link: "/who-we-help/case-management-groups"

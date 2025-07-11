@@ -2,6 +2,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/NavBar.css';
+import { getPublicAssetUrl } from '../utils/assetHelper';
 
 function NavBar() {
   const [openDropdown, setOpenDropdown] = useState(null);
@@ -43,7 +44,7 @@ function NavBar() {
     <nav className="navbar" ref={navRef}>
       <div className="navbar__logo">
         <Link to="/">
-          <img src="/images/Logo.png" alt="Logo" />
+          <img src={getPublicAssetUrl('images/Logo.png')} alt="Logo" />
         </Link>
       </div>
 
