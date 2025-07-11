@@ -1,34 +1,39 @@
 import React, { useState } from 'react';
-import { getPublicAssetUrl } from '../utils/assetHelper';
 import '../styles/ServicesSection.css';
+
+// Import images directly
+import ccmImage from '../assets/images/ccm.jpg';
+import caseImage from '../assets/images/case.jpg';
+import behavioralImage from '../assets/images/behavioral.jpg';
+import rpmImage from '../assets/images/rpm.jpg';
 
 const services = [
   {
     title: "Chronic Care Management",
     description: "Our CCM program enhances your practice with EHR-integrated technology and dedicated professionals, providing exceptional patient care.",
-    image: getPublicAssetUrl("images/ccm.jpg"),
-    link: "/services/chronic-care-management",
+    image: ccmImage,
+    link: `${process.env.PUBLIC_URL}/services/chronic-care-management`,
     modalContent: "Our Chronic Care Management (CCM) program is designed to provide comprehensive, continuous care for patients with multiple chronic conditions. Through regular check-ins, medication management, and care coordination, we help improve patient outcomes while generating additional revenue for your practice."
   },
   {
     title: "Case Management",
     description: "Medical Case Management services coordinate and optimize patient care, collaborating with patients, families, and providers to create personalized plans that help improve health outcomes and quality of life.",
-    image: getPublicAssetUrl("images/case.jpg"),
-    link: "/services/case-management",
+    image: caseImage,
+    link: `${process.env.PUBLIC_URL}/services/case-management`,
     modalContent: "Our Case Management services provide comprehensive care coordination for complex medical cases. We work closely with healthcare providers, patients, and their families to develop and implement personalized care plans that optimize health outcomes and improve quality of life."
   },
   {
     title: "Behavioral Health",
     description: "Our team delivers tailored care, support, and therapeutic solutions to assist patients in managing mental health challenges, alleviating stress, and reaching their wellness goals.",
-    image: getPublicAssetUrl("images/behavioral.jpg"),
-    link: "/services/behavioral-health",
+    image: behavioralImage,
+    link: `${process.env.PUBLIC_URL}/services/behavioral-health`,
     modalContent: "Our Behavioral Health services offer comprehensive mental health support and interventions. We provide evidence-based treatments, counseling, and support services to help patients manage their mental health conditions and improve their overall well-being."
   },
   {
     title: "Remote Patient Monitoring",
     description: "Access RPM services which are designed to track, monitor, and help provide treatment for your patients, enhancing care in the comfort of their homes.",
-    image: getPublicAssetUrl("images/rpm.jpg"),
-    link: "/services/remote-patient-monitoring",
+    image: rpmImage,
+    link: `${process.env.PUBLIC_URL}/services/remote-patient-monitoring`,
     modalContent: "Our Remote Patient Monitoring (RPM) program uses cutting-edge technology to track vital signs and health metrics in real-time. This allows for early intervention, reduced hospitalizations, and better management of chronic conditions, all while patients remain comfortable at home."
   }
 ];
