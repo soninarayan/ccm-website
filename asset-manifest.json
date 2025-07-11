@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ccm-website/static/css/main.c29d45e3.css",
-    "main.js": "/ccm-website/static/js/main.2e5d0ccf.js",
+    "main.css": "/ccm-website/static/css/main.89ced77d.css",
+    "main.js": "/ccm-website/static/js/main.f6747772.js",
     "static/js/453.7327f78f.chunk.js": "/ccm-website/static/js/453.7327f78f.chunk.js",
     "index.html": "/ccm-website/index.html",
-    "main.c29d45e3.css.map": "/ccm-website/static/css/main.c29d45e3.css.map",
-    "main.2e5d0ccf.js.map": "/ccm-website/static/js/main.2e5d0ccf.js.map",
+    "main.89ced77d.css.map": "/ccm-website/static/css/main.89ced77d.css.map",
+    "main.f6747772.js.map": "/ccm-website/static/js/main.f6747772.js.map",
     "453.7327f78f.chunk.js.map": "/ccm-website/static/js/453.7327f78f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c29d45e3.css",
-    "static/js/main.2e5d0ccf.js"
+    "static/css/main.89ced77d.css",
+    "static/js/main.f6747772.js"
   ]
 }
