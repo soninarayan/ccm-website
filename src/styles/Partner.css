@@ -1,0 +1,125 @@
+.partner-section {
+    background: #e8eaf6;
+    padding: 3.5rem 0 2.5rem 0;
+  }
+  
+  .partner-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  
+  .partner-title {
+    text-align: center;
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: #0b1a4a;
+    letter-spacing: 0.01em;
+    line-height: 1.4;
+    margin-top: 0rem;
+    padding-bottom: 3rem;
+  }
+  
+  .partner-features {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+  
+  .partner-feature {
+    flex: 1 1 220px;
+    max-width: 270px;
+    min-width: 200px;
+    background: none;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 0.5rem;
+  }
+  
+  .partner-icon {
+    margin: 0 auto 1.1rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .partner-svg-icon {
+    display: inline-flex;
+    width: 56px;
+    height: 56px;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(11,83,166,0.10);
+    background: #0B53A6;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .partner-feature-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0b1a4a;
+    margin-bottom: 0.5rem;
+  }
+  
+  .partner-feature-desc {
+    color: #233366;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 0;
+  }
+  
+  @media (max-width: 900px) {
+    .partner-section {
+      padding: 2.5rem 0 2rem 0;
+    }
+    .partner-features {
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      padding-bottom: 0rem;
+    }
+    .partner-feature {
+      max-width: 45%;
+      min-width: 180px;
+      margin-bottom: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .partner-section {
+      padding: 2rem 0 1.5rem 0;
+    }
+    .partner-title {
+      font-size: 1.8rem;
+      margin-bottom: 2.2rem;
+      line-height: 1.5; /* Slightly more spacing on mobile */
+    }
+    .partner-features {
+      flex-direction: column;
+      align-items: center;
+      gap: 0rem;
+    }
+    .partner-feature {
+      max-width: 100%;
+      min-width: 0;
+      padding: 0 0.2rem;
+      margin-bottom: 0rem;
+      padding-bottom: 0rem;
+    }
+    .partner-icon {
+      margin-bottom: 0.8rem;
+    }
+    .partner-svg-icon {
+      width: 48px;
+      height: 48px;
+    }
+    .partner-feature-title {
+      font-size: 1.4rem;
+      margin-bottom: 0.3rem;
+    }
+    .partner-feature-desc {
+      font-size: 1.15rem;
+      line-height: 1.5;
+    }
+  }

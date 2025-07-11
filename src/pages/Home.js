@@ -1,21 +1,22 @@
 import React from 'react';
 import HeroSection from '../components/HeroSection';
-import FeaturesSection1 from '../components/FeaturesSection1';
-import FeaturesSection2 from '../components/FeaturesSection2';
-import FeaturesSection3 from '../components/FeaturesSection3';
-import ServicesCarousel from '../components/ServicesCarousel';
+import ServicesSection from '../components/ServicesSection';
 import ContactSection from '../components/ContactSection';
+import Partner from '../components/Partner';
+import CCMFeatures from '../components/CCMFeatures';
+import WhoWeServe from '../components/WhoWeServe';
+
 
 const Home = () => {
   return (
-    <>
+    <div>
       <HeroSection />
-      <FeaturesSection1 />
-      <ServicesCarousel />
-      <FeaturesSection2 />
-      <FeaturesSection3 />
+      <Partner />
+      <ServicesSection />
+      <WhoWeServe />
+      <CCMFeatures />
       <ContactSection />
-    </>
+    </div>
   );
 };
 

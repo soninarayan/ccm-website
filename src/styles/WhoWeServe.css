@@ -1,0 +1,232 @@
+.who-we-serve-section {
+  padding: 15px 0 40px 0;
+  background: rgb(239,248,255);
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.who-we-serve-title {
+  text-align: center;
+  color: #1a237e;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  position: relative;
+  font-weight: 700;
+}
+
+.who-we-serve-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  flex: 1;
+}
+
+.who-we-serve-container > *:last-child {
+  grid-column: 1 / -1;
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+}
+
+.who-we-serve-item {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: rgb(216, 220, 241);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 2px 10px rgba(26, 35, 126, 0.08);
+  border: 1px solid rgba(26, 35, 126, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-height: 140px;
+}
+
+.who-we-serve-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(26, 35, 126, 0.12);
+  background: rgb(216, 220, 241);
+}
+
+.who-we-serve-image-container {
+  flex: 0.35;
+  max-width: 30%;
+  position: relative;
+}
+
+.who-we-serve-image {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.who-we-serve-content {
+  flex: 1;
+  max-width: 70%;
+  padding-left: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.who-we-serve-heading {
+  color: #1a237e;
+  font-size: 1.4rem;
+  margin-bottom: 0.375rem;
+  line-height: 1.2;
+  text-align: left;
+  width: 100%;
+  position: relative;
+  padding-bottom: 0.25rem;
+  font-weight: 700;
+}
+
+.who-we-serve-heading::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background: linear-gradient(90deg, #1a237e 0%, #3949ab 100%);
+  border-radius: 1px;
+}
+
+.who-we-serve-description {
+  color: #424242;
+  font-size: 1rem;
+  line-height: 1.3;
+  margin-bottom: 0.75rem;
+  text-align: left;
+  width: 100%;
+  font-weight: 500;
+}
+
+.who-we-serve-btn {
+  display: inline-block;
+  padding: 6px 16px;
+  background: linear-gradient(135deg, #1a237e 0%, #3949ab 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: none;
+  box-shadow: 0 2px 8px rgba(26, 35, 126, 0.2);
+  font-size: 0.95rem;
+}
+
+.who-we-serve-btn:hover {
+  background: linear-gradient(135deg, #151b60 0%, #2c3985 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(26, 35, 126, 0.25);
+}
+
+@media (max-width: 1024px) {
+  .who-we-serve-container {
+    max-width: 95%;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .who-we-serve-section {
+    padding: 12px 0 30px 0;
+  }
+
+  .who-we-serve-title {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+  }
+
+  .who-we-serve-container {
+    grid-template-columns: 1fr;
+    gap: 0.875rem;
+  }
+
+  .who-we-serve-container > *:last-child {
+    grid-column: auto;
+    max-width: 100%;
+  }
+
+  .who-we-serve-item {
+    padding: 0.875rem 1rem;
+    gap: 1rem;
+    min-height: 120px;
+  }
+
+  .who-we-serve-image {
+    height: 100px;
+  }
+
+  .who-we-serve-heading {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .who-we-serve-section {
+    padding: 10px 0 25px 0;
+  }
+
+  .who-we-serve-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .who-we-serve-container {
+    padding: 0 10px;
+    gap: 0.75rem;
+  }
+
+  .who-we-serve-item {
+    padding: 0.75rem;
+    gap: 0.75rem;
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .who-we-serve-image-container {
+    max-width: 100%;
+  }
+
+  .who-we-serve-image {
+    height: 140px;
+  }
+
+  .who-we-serve-content {
+    max-width: 100%;
+    padding: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .who-we-serve-heading {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 0.25rem;
+  }
+
+  .who-we-serve-heading::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .who-we-serve-description {
+    text-align: center;
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .who-we-serve-btn {
+    padding: 5px 14px;
+    font-size: 0.9rem;
+  }
+}
