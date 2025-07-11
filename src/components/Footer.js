@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="footer-content desktop-only">
             {/* Company Info */}
             <div className="footer-section">
-              <img src="/images/Logo.png" alt="Chronic Care Bridge Logo" className="footer-logo" />
+              <img src={`${process.env.PUBLIC_URL}/images/Logo.png`} alt="Chronic Care Bridge Logo" className="footer-logo" />
               <p className="company-description">
                 Transforming healthcare management through innovative solutions. We help healthcare providers deliver better patient care while optimizing their practice operations.
               </p>
@@ -74,7 +74,7 @@ const Footer = () => {
 
       {/* Mobile Footer */}
       <div className="mobile-footer">
-        <img src="/images/Logo.png" alt="Chronic Care Bridge Logo" className="footer-logo" />
+        <img src={`${process.env.PUBLIC_URL}/images/Logo.png`} alt="Chronic Care Bridge Logo" className="footer-logo" />
         <div className="footer-bottom">
           <p>&copy; 2025 Chronic Care Bridge. All rights reserved.</p>
           <div className="footer-bottom-links">
