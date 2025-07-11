@@ -1,6 +1,6 @@
 // src/App.js
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import './fontawesome'; // Import FontAwesome initialization
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
