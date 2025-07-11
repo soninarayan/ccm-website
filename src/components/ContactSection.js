@@ -53,11 +53,11 @@ const ContactSection = () => {
           <div className="contact-info">
             <div className="contact-item">
               <span className="contact-icon">📧</span>
-              info@yourcompany.com
+              info@chroniccarebridge.com
             </div>
             <div className="contact-item">
               <span className="contact-icon">📞</span>
-              +1 (555) 123-4567
+              +1 (832) 617-6222
             </div>
           </div>
         </div>
