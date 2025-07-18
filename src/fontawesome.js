@@ -6,6 +6,8 @@ import {
   faShieldAlt,
   faChartLine,
   faHeadset,
+  faChevronLeft,
+  faChevronRight,
 } from '@fortawesome/free-solid-svg-icons';
 
 library.add(
@@ -15,4 +17,6 @@ library.add(
   faShieldAlt,
   faChartLine,
   faHeadset,
+  faChevronLeft,
+  faChevronRight,
 ); 

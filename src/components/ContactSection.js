@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope, faPhone, faCheck } from '@fortawesome/free-solid-svg-icons';
 import '../styles/ContactSection.css';
 
 const ContactSection = () => {
@@ -34,29 +36,41 @@ const ContactSection = () => {
           </p>
           <ul className="feature-list">
             <li className="feature-item">
-              <span className="check-icon">✓</span>
+              <span className="check-icon">
+                <FontAwesomeIcon icon={faCheck} />
+              </span>
               Personalized Platform Demo
             </li>
             <li className="feature-item">
-              <span className="check-icon">✓</span>
+              <span className="check-icon">
+                <FontAwesomeIcon icon={faCheck} />
+              </span>
               Expert Q&A Session
             </li>
             <li className="feature-item">
-              <span className="check-icon">✓</span>
+              <span className="check-icon">
+                <FontAwesomeIcon icon={faCheck} />
+              </span>
               Custom Solution Discussion
             </li>
             <li className="feature-item">
-              <span className="check-icon">✓</span>
+              <span className="check-icon">
+                <FontAwesomeIcon icon={faCheck} />
+              </span>
               ROI Analysis
             </li>
           </ul>
           <div className="contact-info">
             <div className="contact-item">
-              <span className="contact-icon">📧</span>
+              <span className="contact-icon">
+                <FontAwesomeIcon icon={faEnvelope} />
+              </span>
               info@chroniccarebridge.com
             </div>
             <div className="contact-item">
-              <span className="contact-icon">📞</span>
+              <span className="contact-icon">
+                <FontAwesomeIcon icon={faPhone} />
+              </span>
               +1 (832) 617-6222
             </div>
           </div>

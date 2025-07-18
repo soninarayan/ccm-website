@@ -1,6 +1,6 @@
 .services-section {
   padding: 60px 0;
-  background: linear-gradient(135deg, #1a237e 0%, #283593 50%, #1a237e 100%);
+  background: rgb(70,127,247);
   position: relative;
   overflow: hidden;
 }
